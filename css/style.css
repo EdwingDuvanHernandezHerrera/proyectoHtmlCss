@@ -14,6 +14,7 @@ body{
     background: var(--colorThird);
 }
 
+/*--------------------- Menú de navegación---------------------------- */
 header{
     width: 100%;
     height: 10vh;
@@ -67,3 +68,92 @@ header{
     color: var(--colorPrimary);
 
 }
+
+/* Contener principal de la pagina */
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*---------------- Section 1----------------*/
+.sectionContent{
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionContent .contentContainer{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.rowsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;    
+    width: 100%;
+    height: 50%;
+}
+
+.sectionContent .imgContainer{
+    width: 100%;
+    height: 90%;
+}
+
+.imgContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.contentContainer .rowsContent{
+    width: 70%;
+}
+
+.rowsContent h1{
+    color: var(--colorPrimary);
+    font-size: 4rem;
+    font-family: 'sans-serif';
+    font-weight: 400;
+}
+
+.rowsContent h4{
+    color: var(--colorSecondary);
+    line-height: 1.5rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+/*-------------------Section 2----------------*/
+.rowsContent h6{
+    color: var(--colorPrimary);
+}
+.rowsContent h2{
+    color: var(--colorSecondary);
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+.rowsContent p{
+    color: var(--colorSecondary);
+}
+
+.sectionContent:nth-child(2) .rowsContent:nth-child(2){
+    display: flex;
+    height: 12vh;
+    overflow: hidden;
+}
+
+/*-------------- Diseño del botón------------ */
+.buttonLink{
+    background: var(--colorPrimary);
+    border: none;
+    padding: .5vh;
+    color: var(--colorSecondary);
+}
+

@@ -15,6 +15,8 @@ Practicar los conceptos de HTML y CSS para aprobar el filtro de habilidades de d
 1. Creación de la estructura inicial de carpetas, ficheros, paleta de colores y temas del Proyecto
 2. Estructura Html de la página web
 3. Diseño de las dos primeras secciones de la página web
+4. Diseño de las secciones 3 y 4 de la página web
+5. Diseño sección 5 y Footer de la página web
 
 
 
@@ -48,13 +50,15 @@ Primero, se agrega un div con clase ".rowsContainer" en el html para comprimir e
 
 Se utiliza flex para dividir cada sección en dos mitades: una imagen a un lado y un contenedor con título, párrafo y botón al otro lado de la sección. Finalmente, se le da un formato inicial a cada botón con clase ".buttonLinks" de la página.
 
+##### 5. Diseño de las secciones 4 y 5 de la página web
+
+Se crean las secciones 4 y 5 de la página utilizando Flex para el ordenamiento vertical wrap y horizontal de los contenidos e imágenes. Se utilizan también íconos.
 
 
 
+##### 6. Diseño sección 5 y Footer de la página web
 
-
-
-
+Se diseña la sección 5 y se crea el footer de la página. Adicional, se modifica el tamaño de letra de los h2 dentro de la clase .rowsContent a 2rem.
 
 
 

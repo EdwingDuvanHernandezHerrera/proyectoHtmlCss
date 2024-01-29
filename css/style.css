@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url(variables.css);
+@import url('variables.css');
 
 *{
     font-family: 'Poppins', 'sans-serif';
@@ -41,6 +41,7 @@ header{
     width: 30%;
     display: flex;
     justify-content: space-between;    
+    
 }
 
 .navButtons a{
@@ -105,11 +106,17 @@ main{
 .sectionContent .imgContainer{
     width: 100%;
     height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgContainer img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+
+    width: auto;
+    height: auto;
 }
 
 .contentContainer .rowsContent{
@@ -156,4 +163,104 @@ main{
     padding: .5vh;
     color: var(--colorSecondary);
 }
+
+/* ------------------Section 3--------------- */
+.sectionContent:nth-child(3) .contentContainer,
+.sectionContent:nth-child(4) .contentContainer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionContent:nth-child(3) .rowsContent:nth-child(1),
+.sectionContent:nth-child(4) .rowsContent:nth-child(1){
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+.sectionContent:nth-child(3) .rowsContent:nth-child(2),
+.sectionContent:nth-child(4) .rowsContent:nth-child(2){
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.targetContainer{
+    background: var(--colorFifth);
+    width: 30%;
+    border: none;
+    border-radius: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.targetContent, .serviceContent{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+.targetImg, .serviceImg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.targetImg img, .serviceImg img{
+    max-width: 50%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.targetContent span{
+    color: var(--colorFourth);
+    font-size: .8rem;
+}
+.targetContent p{
+    color: var(--colorPrimary);
+}
+
+.targetIcon{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 10px;
+}
+.bx{
+    color: var(--colorThird);
+    font-size: 2rem;
+}
+
+/* --------Section 4----------- */
+
+.colContent{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.serviceContent h4{
+    color: var(--colorPrimary);
+}
+.serviceContent p{
+    color: var(--colorSecondary);
+    font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+
 

@@ -14,6 +14,7 @@ Practicar los conceptos de HTML y CSS para aprobar el filtro de habilidades de d
 
 1. Creación de la estructura inicial de carpetas, ficheros, paleta de colores y temas del Proyecto
 2. Estructura Html de la página web
+3. Diseño de las dos primeras secciones de la página web
 
 
 
@@ -40,6 +41,12 @@ Practicar los conceptos de HTML y CSS para aprobar el filtro de habilidades de d
 Se crea la barra de navegación utilizando Flex para ordenar el nombre de la empresa a la izquierda y los enlaces o navs a la derecha. También se emplea el modelo de caja, específicamente la propiedad position con su valores relative y absolute para generar un efecto de animación al pasar el mouse con el pseudoselector :hover. Por último se establece el color del fondo del body y el header.
 
 
+
+##### 4. Diseño de las dos primeras secciones de la página web
+
+Primero, se agrega un div con clase ".rowsContainer" en el html para comprimir el contenido verticalmente en el centro de la página dándole un height del 50% del div padre. Luego, se le asigna un width de 100% al main y se convierte en display tipo flex para centrar todas las secciones dentro de este. Todas las secciones tienen la misma clase y se les da un ancho de 80% centradas horizontalmente.
+
+Se utiliza flex para dividir cada sección en dos mitades: una imagen a un lado y un contenedor con título, párrafo y botón al otro lado de la sección. Finalmente, se le da un formato inicial a cada botón con clase ".buttonLinks" de la página.
 
 
 

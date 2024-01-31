@@ -10,8 +10,8 @@
 
 body{
     width: 100%;
-    height: 100vh;
     background: var(--colorThird);
+    overflow: scroll;
 }
 
 /*--------------------- Menú de navegación---------------------------- */
@@ -21,6 +21,9 @@ header{
     background: var(--colorSeventh);
     display: flex;
     justify-content: center;
+    position: sticky;
+    top:0;
+    z-index: 9;
 }
 
 .navBar{
@@ -40,7 +43,8 @@ header{
 .navButtons{
     width: 30%;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;   
+    flex-wrap: wrap; 
     
 }
 
@@ -81,7 +85,7 @@ main{
 /*---------------- Section 1----------------*/
 .sectionContent{
     width: 80%;
-    height: 90vh;
+    height: calc(90vh - 10vh);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,8 +116,8 @@ main{
 }
 
 .imgContainer img{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 90%;
 
     width: auto;
     height: auto;
@@ -200,6 +204,13 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 2vh;
+    animation: aparecer linear both;
+    animation-timeline: view();
+    animation-range: 0 500px;
+}
+
+.targetContainer:hover{
+    animation: rotar 1s linear .3s  both;
 }
 
 .targetContent, .serviceContent{
@@ -279,7 +290,6 @@ main{
     font-size: 2.5rem;
     font-family: 'sans-serif';
     font-weight: 500;
-    line-height: .8rem;
     letter-spacing: .3rem;
 }
 
@@ -330,13 +340,118 @@ footer{
 
 footer .bx{
     color: var(--colorPrimary);
+    z-index: 10;
+    animation: aparecer linear both;
+    animation-timeline: view();
+    
+}
+footer .bx:nth-child(1){
+    animation-range: 0 100px;
 }
 
+footer .bx:nth-child(2){
+    animation-delay: 2s;
+    animation-range: 0 110px;
+
+}
+footer .bx:nth-child(3){
+    animation-delay: 4s;
+    animation-range: 0 120px;
+}
+footer .bx:nth-child(4){
+    animation-delay: 6s;
+    animation-range: 0 130px;
+}
+
+/* --------Probando animaciones------------- */
 
 
+#headerFijo{
+    position: fixed;
+    top: 0;
+    width: 0%;
+    /* background: rgba(226, 106, 8, 0.637); */
+    background: var(--colorPrimary);
+    height: 1vh;
+    z-index: 8;
+    animation: progreso auto linear;
+    animation-timeline: scroll(root block);
+}
 
+@keyframes progreso{
+    from{width: 0%;}
+    to{ 
+        width: 100%;
+        backdrop-filter: blur(5px);
+    }
+}
 
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        translate: 0 100px;
+    }
 
+    to{
+        opacity: 1;
+        translate: 0 0;
+        
+    }
+}
+@keyframes rotar{
+    from{
+        transform: rotateY(0);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
 
+/* -----------Responsive-------------- */
+@media (max-width: 576px){
 
+}
 
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 992px){
+    
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+    .sectionContent{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .sectionContent:nth-child(2){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .sectionContent:nth-child(5){
+        display: flex;
+    }
+    .sectionContent:nth-child(3), .sectionContent:nth-child(4){
+        height: auto;
+    }
+    .sectionContent:nth-child(3) .rowsContent:nth-child(2){
+        flex-direction: column;
+    }
+    .sectionContent:nth-child(4) .rowsContent:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .targetContainer, .colContent{
+        width: 80%;
+        margin-bottom: 2vh;
+    }
+
+}

@@ -50,9 +50,9 @@ Primero, se agrega un div con clase ".rowsContainer" en el html para comprimir e
 
 Se utiliza flex para dividir cada sección en dos mitades: una imagen a un lado y un contenedor con título, párrafo y botón al otro lado de la sección. Finalmente, se le da un formato inicial a cada botón con clase ".buttonLinks" de la página.
 
-##### 5. Diseño de las secciones 4 y 5 de la página web
+##### 5. Diseño de las secciones 3 y 4 de la página web
 
-Se crean las secciones 4 y 5 de la página utilizando Flex para el ordenamiento vertical wrap y horizontal de los contenidos e imágenes. Se utilizan también íconos.
+Se crean las secciones 3 y 4 de la página utilizando Flex para el ordenamiento vertical wrap y horizontal de los contenidos e imágenes. Se utilizan también íconos.
 
 
 

@@ -8,6 +8,13 @@
     box-sizing: border-box;    
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 10vh;
+}
 body{
     width: 100%;
     background: var(--colorThird);
@@ -21,6 +28,7 @@ header{
     background: var(--colorSeventh);
     display: flex;
     justify-content: center;
+    align-items: center;
     position: sticky;
     top:0;
     z-index: 9;
@@ -74,6 +82,10 @@ header{
 
 }
 
+.checkbtn, #check{
+    display: none;
+}
+
 /* Contener principal de la pagina */
 main{
     width: 100%;
@@ -85,7 +97,7 @@ main{
 /*---------------- Section 1----------------*/
 .sectionContent{
     width: 80%;
-    height: calc(90vh - 10vh);
+    height: 90dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,13 +165,14 @@ main{
 }
 .rowsContent p{
     color: var(--colorSecondary);
+    
 }
 
-.sectionContent:nth-child(2) .rowsContent:nth-child(2){
+/* .sectionContent:nth-child(2) .rowsContent:nth-child(2){
     display: flex;
     height: 12vh;
-    overflow: hidden;
-}
+    
+} */
 
 /*-------------- Diseño del botón------------ */
 .buttonLink{
@@ -183,7 +196,7 @@ main{
 .sectionContent:nth-child(3) .rowsContent:nth-child(1),
 .sectionContent:nth-child(4) .rowsContent:nth-child(1){
     width: 100%;
-    height: 10%;
+    height: 10vh;
     text-align: center;
 }
 .sectionContent:nth-child(3) .rowsContent:nth-child(2),
@@ -204,9 +217,9 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 2vh;
-    animation: aparecer linear both;
+    /* animation: aparecer linear both;
     animation-timeline: view();
-    animation-range: 0 500px;
+    animation-range: 0 500px; */
 }
 
 .targetContainer:hover{
@@ -215,7 +228,7 @@ main{
 
 .targetContent, .serviceContent{
     width: 100%;
-    height: 10%;
+    height: 50%;
     text-align: center;
 }
 
@@ -292,11 +305,11 @@ main{
     font-weight: 500;
     letter-spacing: .3rem;
 }
-
+/* ------------Footer----------------- */
 
 footer{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -319,7 +332,7 @@ footer{
 }
 .menuFooter .titleMenu::after{
     content: "";
-    width: 5vw;
+    width: 50px;
     background-color: var(--colorPrimary);
     height: 3.5px;
 }
@@ -340,27 +353,11 @@ footer{
 
 footer .bx{
     color: var(--colorPrimary);
-    z-index: 10;
-    animation: aparecer linear both;
-    animation-timeline: view();
-    
-}
-footer .bx:nth-child(1){
-    animation-range: 0 100px;
 }
 
-footer .bx:nth-child(2){
-    animation-delay: 2s;
-    animation-range: 0 110px;
-
-}
-footer .bx:nth-child(3){
-    animation-delay: 4s;
-    animation-range: 0 120px;
-}
-footer .bx:nth-child(4){
-    animation-delay: 6s;
-    animation-range: 0 130px;
+footer ul li a{
+    text-decoration: none;
+    color: var(--colorSecondary);
 }
 
 /* --------Probando animaciones------------- */
@@ -386,6 +383,16 @@ footer .bx:nth-child(4){
     }
 }
 
+@keyframes aparecerMenu{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: .95;
+        
+    }
+}
 @keyframes aparecer{
     from{
         opacity: 0;
@@ -411,17 +418,9 @@ footer .bx:nth-child(4){
 }
 
 /* -----------Responsive-------------- */
-@media (max-width: 576px){
-
-}
-
-@media (max-width: 768px){
-
-}
 
 @media (max-width: 992px){
     
-
     main{
         display: flex;
         flex-wrap: wrap;
@@ -432,16 +431,44 @@ footer .bx:nth-child(4){
         display: flex;
         flex-direction: column;
         text-align: center;
+        justify-content: space-around;
+       
+    }
+    .sectionContent .contentContainer{
+        height: 40dvh;
+    }
+    
+    .sectionContent .imgContainer{
+        height: 40dvh;
+    }
+    .sectionContent .contentContainer .rowsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 30dvh;
+    }
+
+    .sectionContent .contentContainer .rowsContent{
+        width: 100%;  
+    }
+    .sectionContent:nth-child(2) .contentContainer .rowsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 35dvh;
     }
     .sectionContent:nth-child(2){
         display: flex;
         flex-direction: column-reverse;
+        justify-content: space-around;
     }
-    .sectionContent:nth-child(5){
-        display: flex;
-    }
+
     .sectionContent:nth-child(3), .sectionContent:nth-child(4){
         height: auto;
+    }
+    .sectionContent:nth-child(3) .contentContainer .rowsContent,
+    .sectionContent:nth-child(4) .contentContainer .rowsContent{
+        padding: 5dvh 0 10dvh 0;
     }
     .sectionContent:nth-child(3) .rowsContent:nth-child(2){
         flex-direction: column;
@@ -449,9 +476,107 @@ footer .bx:nth-child(4){
     .sectionContent:nth-child(4) .rowsContent:nth-child(2){
         flex-direction: column-reverse;
     }
+   
     .targetContainer, .colContent{
         width: 80%;
         margin-bottom: 2vh;
     }
 
+    .sectionContent:nth-child(5){
+        display: flex;
+        height: 60dvh;
+    }
+    .sectionContent:nth-child(5) .container{
+        height: 30dvh;
+    }
+    .titleContainer h2{
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+    }
+
+    footer{
+        height: 90dvh;
+    }
+    .footerElements{
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 3vh;
+    }
+    .footerElements .menuFooter:nth-child(4){
+        align-self: center;
+    }
+    .footerElements .menuFooter:nth-child(4) .titleMenu{
+        text-align: center;
+        letter-spacing: .2rem;
+    }
+
+    .footerElements .menuFooter .titleMenu{
+        font-size: 1.1rem;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-around;
+    } 
+    header .navBar .navContent{
+        padding-left: 2vh;
+    }
+
+    .rowsContent h1{
+        font-size: 3rem;
+    }
+    .rowsContent h2{
+        font-size: 1.5rem;
+    }
+
+    /* ------------Menu Desplegable----------- */
+   header .navBar{
+    position: relative;
+   }
+   header .checkbtn{
+    display: block;
+   }
+
+    header .checkbtn i{
+        font-size: 2rem;
+        margin-right: 2vh;
+        color: var(--colorSecondary);
+    }
+
+    .navButtons{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: var(--colorSixth);
+        width: 0;
+        font-size: 0;
+        height: 60vh;
+        top: 10vh;
+        justify-content: space-around;
+        font-size: 1.8rem;
+        font-size: 0;
+        align-items: center;
+        opacity: 0;  
+        transition: all .5s linear;
+    }
+
+    #check:checked ~ .navButtons{
+        opacity: .95;
+        width: 100%;
+        font-size: 1.8rem;
+        
+    }
 }
+
+
+
+
+
+
+    
+
+
+
+
+
+

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/variables.css">
+    <script defer src="js/main.js"></script>
     <title>Foods</title>
 </head>
 <body>
@@ -13,17 +14,23 @@
     <header>
         <div class="navBar">
             <div class="navContent"><h2>Foods</h2></div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="bx bx-menu"></i>
+            </label>            
             <div class="navButtons">
-                <div class="buttonNav"><a href="">Home</a></div>
-                <div class="buttonNav"><a href="">About</a></div>
-                <div class="buttonNav"><a href="">Menu</a></div>
-                <div class="buttonNav"><a href="">Service</a></div>
-                <div class="buttonNav"><a href="">Contact</a></div>
+                <div class="buttonNav"><a href="#home">Home</a></div>
+                <div class="buttonNav"><a href="#about">About</a></div>
+                <div class="buttonNav"><a href="#foodMenu">Menu</a></div>
+                <div class="buttonNav"><a href="#services">Service</a></div>
+                <div class="buttonNav"><a href="#contact">Contact</a></div>
             </div>
         </div>    
+        
+ 
     </header>
     <main>
-        <section class="sectionContent">
+        <section id="home" class="sectionContent">
             <div class="contentContainer">
                 <div class="rowsContainer">
                     <div class="rowsContent"><h1>Full Web Site</h1></div>
@@ -33,17 +40,17 @@
             </div>
             <div class="imgContainer"><img src="storage/img/home.png" alt=""></div>
         </section>
-        <section class="sectionContent">
+        <section id="about" class="sectionContent">
             <div class="imgContainer"><img src="storage/img/about.png" alt=""></div>
             <div class="contentContainer">
                 <div class="rowsContainer">
                     <div class="rowsContent"><h6>About Us</h6><h2>We speak the good <br>food language</h2></div>
-                    <div class="rowsContent"><p>It is a long established fact that a be distracted by the readable content looking at its layout. The point of Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque exercitationem asperiores omnis! Assumenda libero quidem doloremque, laborum iure ea officia ratione nemo adipisci accusantium, labore, magni aut reiciendis incidunt.</p></div>
+                    <div class="rowsContent"><p>It is a long established fact that a be distracted by the readable content looking at its layout. The point of</p></div>
                     <div class="rowsContent"><button class="buttonLink">Learn More</button></div>
                 </div>
             </div>    
         </section>
-        <section class="sectionContent">
+        <section id="foodMenu" class="sectionContent">
             <div class="contentContainer">
                 <div class="rowsContent"><h6>Food Menu</h6><h2>Fresh taste and great price</h2></div>
                 <div class="rowsContent">
@@ -71,7 +78,7 @@
                 </div>
             </div>
         </section>
-        <section class="sectionContent">
+        <section id="services" class="sectionContent">
             <div class="contentContainer">
                 <div class="rowsContent"><h6>Services</h6><h2>We provide best food services</h2></div>
                 <div class="rowsContent">
@@ -99,22 +106,22 @@
                 </div>
             </div>    
         </section>
-        <section class="sectionContent">
+        <section id="banner" class="sectionContent">
             <div class="container">
                 <div class="titleContainer"><h2>We make quality food</h2><br><h2>Everyday</h2><br><button class="buttonLink">Learn More</button></div>
             </div>
         </section>
-        <footer>
+        <footer id="contact">
             <div class="footerElements">
                 <div class="menuFooter">
                     <div class="titleMenu"><h3>Menu Links</h3></div>
                     <div class="listMenu">
                         <ul>
-                            <li><a href="#"></a>Home</li>
-                            <li><a href="#"></a>About</li>
-                            <li><a href="#"></a>Menu</li>
-                            <li><a href="#"></a>Service</li>
-                            <li><a href="#"></a>Contact</li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#foodMenu">Menu</a></li>
+                            <li><a href="#services">Service</a></li>
+                            <li><a href="#banner">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -122,11 +129,11 @@
                     <div class="titleMenu"><h3>Our Services</h3></div>
                     <div class="listMenu">
                         <ul>
-                            <li><a href="#"></a>Web Design</li>
-                            <li><a href="#"></a>Web Development</li>
-                            <li><a href="#"></a>Marketing</li>
-                            <li><a href="#"></a>Product Management</li>
-                            <li><a href="#"></a>Graphic Design</li>
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Product Management</a></li>
+                            <li><a href="#">Graphic Design</a></li>
                         </ul>
                     </div>
                 </div>
@@ -134,10 +141,10 @@
                     <div class="titleMenu"><h3>Information</h3></div>
                     <div class="listMenu">
                         <ul>
-                            <li><a href="#"></a>About Us</li>
-                            <li><a href="#"></a>Delivery Information</li>
-                            <li><a href="#"></a>Privacy Policy</li>
-                            <li><a href="#"></a>Terms & Conditions</li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
                         </ul>
                     </div>
                 </div>    

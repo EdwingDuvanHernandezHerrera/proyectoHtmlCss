@@ -61,8 +61,10 @@ El proyecto se divide en 7 secciones principales, cada una correspondiente a una
 
 #### Demostración para resolución >992px (.gift)
 
-#### https://raw.githubusercontent.com/EdwingDuvanHernandezHerrera/proyectoHtmlCss/main/storage/demoPC.gif
+https://raw.githubusercontent.com/EdwingDuvanHernandezHerrera/proyectoHtmlCss/main/storage/demoPC.gif
 
 
 
-####  
+####  Demostración para resolución <992px (.gift)
+
+https://github.com/EdwingDuvanHernandezHerrera/proyectoHtmlCss/blob/main/storage/demoMovil.gif

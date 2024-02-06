@@ -1,82 +1,68 @@
-# Proyecto HTML - CSS
+# Proyecto de Repaso de HTML y CSS para Desarrollo Frontend
 
-El presente proyecto es la creación de una página web para aplicar los conceptos básicos de HTML y CSS.
+## Descripción del Proyecto
 
+Este repositorio contiene los archivos necesarios para el proyecto de repaso de HTML y CSS, diseñado para prepararse para el filtro de desarrollo frontend en CampusLands. El objetivo principal del proyecto es la creación de una página tipo Landing Page para promocionar los productos y servicios de una empresa especializada en la producción y distribución de comidas rápidas, con la hamburguesa como su producto insignia.
 
+## Tecnologías Utilizadas
 
-### Objetivo
+- HTML
+- CSS (Exclusivamente con Flexbox)
+- JavaScript (para animar el menú desplegable en versiones móviles)
+- Boxicons (para los íconos de los menús)
 
-Practicar los conceptos de HTML y CSS para aprobar el filtro de habilidades de desarrollo de software en CampusLands.
+## Estructura del Repositorio
 
+El proyecto se divide en 7 secciones principales, cada una correspondiente a una parte específica de la página web. El avance del proyecto se refleja en los commits realizados, permitiendo un seguimiento claro de la evolución del desarrollo.
 
+## Secciones del Proyecto
 
-#### Índice
+1. #### Encabezado con Menú de Navegación:
 
-1. Creación de la estructura inicial de carpetas, ficheros, paleta de colores y temas del Proyecto
-2. Estructura Html de la página web
-3. Diseño de las dos primeras secciones de la página web
-4. Diseño de las secciones 3 y 4 de la página web
-5. Diseño sección 5 y Footer de la página web
+​	Barra de navegación para acceder fácilmente a las distintas secciones del sitio.
 
+2. #### Sección Menú del Día:
 
+​	Incluye un título, una frase promocional, un botón de llamada a la acción y una imagen representativa.
 
+3. #### Sección About Us:
 
+​	Contiene información sobre la empresa, con un título, una frase descriptiva, un botón de exploración y 	una imagen ilustrativa.
 
-##### 1. Estructura inicial del proyecto
+4. #### Sección Menú de Comidas:
 
-​	Se crea la estructura de repositorio y ficheros y se agregan las siguientes fuentes:
+​	Presenta un título, una frase atractiva y un botón para explorar más. Además, incluye una animación 	para los productos estrella que consiste en íconos de estrella, imágenes, nombres de productos y 	  	precios.
 
-​	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+5. #### Sección Services:
 
-​	font-family: 'Poppins', sans-serif;
+​	Muestra tres servicios ofrecidos por la empresa, cada uno con una imagen representativa, el nombre 	del servicio y una breve descripción.
+​	Sección Banner Learn More:
 
+6. #### Banner: 
 
+   Con un llamado a la acción "Learn More" para invitar a los visitantes a obtener más información.
 
-##### 2. Estructura Html de la página web
+7. #### Footer:
 
-​	Se realiza todo el maquetado html de la página web, la cuál se divide en: 1 Header, 5 Etiquetas section y 1 Footer.
+​	Incluye enlaces e iconos de redes sociales para facilitar la conexión y navegación del usuario.
 
+## Funcionalidades Adicionales
 
+#### Menú Desplegable en Versiones Móviles:
 
-##### 3. Creación de la barra de navegación
+- Utilización de JavaScript para animar el menú hamburguesa y mejorar la experiencia de usuario en dispositivos móviles.
+  Barra de Progreso con @keyframes:
+- Empleo de @keyframes en CSS para crear una barra de progreso que se actualiza a medida que el usuario realiza scroll a través de las secciones.
+  Flexbox y Media Query:
 
-Se crea la barra de navegación utilizando Flex para ordenar el nombre de la empresa a la izquierda y los enlaces o navs a la derecha. También se emplea el modelo de caja, específicamente la propiedad position con su valores relative y absolute para generar un efecto de animación al pasar el mouse con el pseudoselector :hover. Por último se establece el color del fondo del body y el header.
+- Todo el diseño y maquetación del proyecto se realizó exclusivamente con Flexbox. Se implementó un media query para mejorar la presentación en pantallas con una resolución inferior a 992px.
 
+## Demos
 
+#### Demostración para resolución >992px (.gift)
 
-##### 4. Diseño de las dos primeras secciones de la página web
-
-Primero, se agrega un div con clase ".rowsContainer" en el html para comprimir el contenido verticalmente en el centro de la página dándole un height del 50% del div padre. Luego, se le asigna un width de 100% al main y se convierte en display tipo flex para centrar todas las secciones dentro de este. Todas las secciones tienen la misma clase y se les da un ancho de 80% centradas horizontalmente.
-
-Se utiliza flex para dividir cada sección en dos mitades: una imagen a un lado y un contenedor con título, párrafo y botón al otro lado de la sección. Finalmente, se le da un formato inicial a cada botón con clase ".buttonLinks" de la página.
-
-##### 5. Diseño de las secciones 3 y 4 de la página web
-
-Se crean las secciones 3 y 4 de la página utilizando Flex para el ordenamiento vertical wrap y horizontal de los contenidos e imágenes. Se utilizan también íconos.
-
-
-
-##### 6. Diseño sección 5 y Footer de la página web
-
-Se diseña la sección 5 y se crea el footer de la página. Adicional, se modifica el tamaño de letra de los h2 dentro de la clase .rowsContent a 2rem.
-
-
-
-
-
+#### https://raw.githubusercontent.com/EdwingDuvanHernandezHerrera/proyectoHtmlCss/main/storage/demoPC.gif
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+####  
